@@ -1,4 +1,3 @@
-// A simple TB for mux
 
 module day1_tb ();
 

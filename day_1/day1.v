@@ -1,4 +1,3 @@
-// A simple mux
 
 module day1 (a,b,sel,y);
   input   wire [2:0] a;
@@ -7,6 +6,7 @@ module day1 (a,b,sel,y);
   output  reg [2:0]y;
 
 always @(*) begin
+
 if(sel)
     y = a;
 else
