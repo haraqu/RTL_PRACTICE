@@ -11,7 +11,7 @@ module day2 (clk,rst,d,q0,q1,q2);
   output    reg      q2;
 
 
-
+  //no rst
   always @(posedge clk)begin
     q0 <= d;
   end
