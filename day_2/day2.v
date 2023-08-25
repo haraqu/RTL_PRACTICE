@@ -11,18 +11,18 @@ module day2 (clk,rst,d,q0,q1,q2);
   output    reg      q2;
 
 
-  // No reset
+
   always @(posedge clk)begin
     q0 <= d;
   end
-  // Sync reset
+  // Sync rst
   always @(posedge clk)begin
     if (rst)
       q1 <= 1'b0;
     else
       q1 <= d;
   end
-  // Async reset
+  //async rst
   always @(posedge clk or posedge rst)begin
     if (rst)
       q2 <= 1'b0;
