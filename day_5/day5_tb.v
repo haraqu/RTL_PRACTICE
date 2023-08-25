@@ -24,10 +24,15 @@ module day5_tb ();
     #10;
     rst <= 1'b0;
     #10;
+      $display("num=%d",cnt);
     #10;
+      $display("num=%d",cnt);
     #10;
+      $display("num=%d",cnt);
     #10;
+      $display("num=%d",cnt);
     #10;
+      $display("num=%d",cnt);
     $finish;
   end
 
